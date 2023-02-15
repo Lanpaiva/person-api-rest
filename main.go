@@ -7,8 +7,8 @@ import (
 
 func main() {
 	models.Persons = []models.Person{
-		{Name: "Nome 1", Historia: "Historia 1"},
-		{Name: "Nome 2", Historia: "Historia 2"},
+		{ID: 1, Name: "Nome 1", Historia: "Historia 1"},
+		{ID: 2, Name: "Nome 2", Historia: "Historia 2"},
 	}
 
 	routes.HandleResponse()
