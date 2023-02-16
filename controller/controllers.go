@@ -16,6 +16,7 @@ func HandlerRequest(w http.ResponseWriter, r *http.Request) {
 }
 
 func AllPersons(w http.ResponseWriter, r *http.Request) {
+	//json.NewEncoder().Encode transforma o slice de Persons EM JSON
 	json.NewEncoder(w).Encode(models.Persons)
 }
 
